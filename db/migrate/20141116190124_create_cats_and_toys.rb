@@ -6,7 +6,7 @@ class CreateCatsAndToys < ActiveRecord::Migration
     end
 
     create_table :toys do |t|
-      t.string :name
+      t.string :name, index:true
       t.belongs_to :cat
       t.timestamps
     end
